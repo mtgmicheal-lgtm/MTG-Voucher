@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/mtg_bg"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:paddingBottom="14dp">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="MTG"
+                    android:textStyle="bold"
+                    android:textSize="30sp"
+                    android:textColor="@color/mtg_text"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="WiFi Voucher Manager"
+                    android:textSize="13sp"
+                    android:textColor="@color/mtg_muted"/>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/settingsBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SETTINGS"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/connectionPanel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/rounded_panel"
+            android:visibility="gone">
+
+            <EditText
+                android:id="@+id/routerIp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Router IP"
+                android:text="192.168.88.1"/>
+
+            <EditText
+                android:id="@+id/routerUser"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Router username"/>
+
+            <EditText
+                android:id="@+id/routerPass"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Router password"
+                android:inputType="textPassword"/>
+
+            <Button
+                android:id="@+id/testBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="TEST CONNECTION + SAVE"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/status"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Not connected"
+            android:textColor="@color/mtg_muted"
+            android:padding="8dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/rounded_panel">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Profile"
+                android:textStyle="bold"/>
+            <Spinner
+                android:id="@+id/profileSpinner"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Number of vouchers"
+                android:textStyle="bold"
+                android:layout_marginTop="8dp"/>
+            <EditText
+                android:id="@+id/countInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:text="10"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Username prefix"
+                android:textStyle="bold"
+                android:layout_marginTop="8dp"/>
+            <EditText
+                android:id="@+id/prefixInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Std"/>
+
+            <Button
+                android:id="@+id/generateBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="GENERATE VOUCHERS"/>
+
+            <Button
+                android:id="@+id/printBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="PRINT / SAVE PDF"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/voucherContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="14dp"/>
+    </LinearLayout>
+</ScrollView>

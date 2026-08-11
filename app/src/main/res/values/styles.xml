@@ -1,0 +1,10 @@
+<resources>
+    <style name="Theme.MTGVoucher" parent="android:style/Theme.Material.Light.NoActionBar">
+        <item name="android:fontFamily">sans</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:statusBarColor">@color/mtg_card</item>
+        <item name="android:navigationBarColor">@color/mtg_card</item>
+        <item name="android:windowBackground">@color/mtg_bg</item>
+        <item name="android:colorAccent">@color/mtg_accent</item>
+    </style>
+</resources>

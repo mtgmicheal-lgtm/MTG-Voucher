@@ -1,0 +1,8 @@
+<resources>
+    <color name="mtg_bg">#F4F5F7</color>
+    <color name="mtg_card">#FFFFFF</color>
+    <color name="mtg_text">#111111</color>
+    <color name="mtg_muted">#6B7280</color>
+    <color name="mtg_accent">#111827</color>
+    <color name="mtg_line">#D1D5DB</color>
+</resources>
